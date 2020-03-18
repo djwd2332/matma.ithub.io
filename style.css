@@ -98,8 +98,8 @@ main > div#container > div#calculation > section#question
 {
     background-color: rgb(0, 198, 248);
     box-shadow: 0 5px rgb(33, 62, 228);
-    font-size: 150px;
-    height: 176px;
+    font-size: 100px;
+    height: 160px;
     border-radius: 50px;
 }
 
@@ -129,9 +129,9 @@ main > div#container > div#calculation > ul#choices > li
     background-color: rgb(68, 178, 241);
     margin-bottom: 10px;
     padding: 20px;
-    height: 44px;
+    height: 20px;
     border-radius: 50px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 main > div#container > div#calculation > ul#choices > li:active,
