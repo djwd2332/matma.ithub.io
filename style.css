@@ -1,0 +1,223 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    word-break: break-all;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-size: 100%;
+    line-height: 1.5;
+}
+body
+{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(./ee.jpg);
+    overflow-y: scroll;  
+}
+
+a
+{
+    text-decoration: none;
+}
+
+li
+{
+    list-style: none;
+}
+
+::-moz-focus-inner
+{
+    border: 1px solid transparent;
+}
+
+main
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 320px;
+    width: 96%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+main > div#container
+{
+    background-color: rgb(3, 0, 0);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px rgb(0, 0, 0);
+    font-size: 0;
+    width: 90%;
+}
+
+main > div#container .structure-elements
+{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px;
+    font-size: initial;
+}
+
+main > div#container > p#message
+{
+    width: 65%;
+    margin-right: 5%;
+    color: rgba(255, 255, 255, 0.26);
+    font-weight: bold;
+    visibility: hidden;
+}
+
+main > div#container > aside#score
+{
+    color: black;
+    background-color: rgb(251, 255, 0);
+    box-shadow: 0 4px rgb(214, 211, 43);
+    border-radius: 50px;
+}
+
+main > div#container > div#calculation
+{
+    width: 80%;
+    margin: 0 auto;
+}
+
+main > div#container > div#calculation > *
+{
+    width: 100%;
+    margin-top: 10px;
+}
+
+main > div#container > div#calculation > section#question
+{
+    background-color: rgb(0, 198, 248);
+    box-shadow: 0 5px rgb(33, 62, 228);
+    font-size: 150px;
+    height: 176px;
+    border-radius: 50px;
+}
+
+main > div#container > div#calculation > p#instruction
+{
+    background-color: rgb(28, 156, 241);
+    box-shadow: 0 4px rgb(18, 22, 243);
+}
+
+main > div#container > div#calculation > ul#choices
+{
+    padding: 0;
+}
+
+main > div#container > div#calculation > ul#choices > li,
+main > div#container > button#start-reset
+{
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px rgba(224, 40, 40, 0.336);
+    transition: box-shadow transform 0.2s;
+}
+
+main > div#container > div#calculation > ul#choices > li
+{
+    width: 100%;
+    background-color: rgb(68, 178, 241);
+    margin-bottom: 10px;
+    padding: 20px;
+    height: 44px;
+    border-radius: 50px;
+    font-size: 25px;
+}
+
+main > div#container > div#calculation > ul#choices > li:active,
+main > div#container > button#start-reset:active
+{
+    color: rgb(17, 106, 238);
+    background-color: rgba(12, 189, 6, 0.966);
+    box-shadow: rgb(13, 116, 233);
+    transform: translateY(4px);
+}
+
+main > div#container > button#start-reset
+{
+    background-color: rgba(252, 43, 6, 0.911);
+    border: 0;
+    margin: 10px auto;
+    line-height: 1;
+    display: block;
+    border-radius: 50px;
+}
+
+main > div#container > aside#time-remaining
+{
+    background-color: rgb(141, 248, 1);
+    border-radius: 50px;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.2);
+    visibility: hidden;
+}
+
+main > div#game-over
+{
+    color: rgb(124, 16, 16);
+    background-image: linear-gradient(rgba(94, 235, 28, 0.938), rgb(248, 244, 10));
+    font-size: 3rem;
+    text-transform: uppercase;
+    position: absolute;
+    padding: 20px;
+    min-width: 250px;
+    display: none;
+}
+
+@media all and (min-width: 768px)
+{
+
+}
+
+@media all and (min-width: 992px)
+{
+
+    main
+    {
+        max-width: 1350px;
+        width: 50%;
+    }
+
+    main > div#container
+    {
+        width: 75%;
+    }
+
+    main > div#container > p#message
+    {
+        width: 25%;
+        margin: 0 25%;
+    }
+
+    main > div#container > div#calculation > ul#choices
+    {
+        font-size: 0;
+    }
+
+    main > div#container > div#calculation > ul#choices > li
+    {
+        width: 24%;
+        display: inline-block;
+        font-size: initial;
+    }
+
+    main > div#container > div#calculation > ul#choices > li:not(:last-of-type)
+    {
+        margin-right: 1%;
+    }
+
+    main > div#container > button#start-reset
+    {
+        display: inline-block;
+        margin: 10px;
+    }
+}
